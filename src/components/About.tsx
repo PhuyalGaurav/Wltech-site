@@ -20,14 +20,10 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                ECS Tech Pvt. Ltd.
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+             We at ECS Tech Pvt. Ltd. are a passionate team of tech enthusiasts based in Nepal, dedicated to helping businesses grow in the digital world. We specialize in website development, graphic designing, and social media marketing. Whether it’s building a modern, responsive website or creating eye-catching designs and digital campaigns, we make sure your brand stands out and connects with the right audience. With a focus on creativity, quality, and client satisfaction, we turn your ideas into impactful digital solutions.
               </p>
             </div>
 
