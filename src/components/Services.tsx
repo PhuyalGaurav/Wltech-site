@@ -10,21 +10,21 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Web Development",
+    title: "Website Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "From simple business websites to complex e-commerce platforms, we build responsive, user-friendly websites that represent your brand and drive conversions.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Social Media Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our comprehensive social media services include content creation, community management, and strategic campaigns that build your online presence and engage your audience.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Digital Marketing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "We create data-driven marketing strategies that increase visibility, drive traffic, and convert visitors into customers through SEO, content marketing, and targeted campaigns.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -36,14 +36,13 @@ export const Services = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Professional Digital{" "}
             </span>
             Services
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            We provide end-to-end digital solutions tailored specifically for Nepali businesses looking to thrive in the digital landscape.
           </p>
 
           <div className="flex flex-col gap-8">

@@ -13,19 +13,23 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
+            WL Tech
           </a>
+          <p className="mt-4 text-muted-foreground">
+            The digital division of WL Food.<br/>
+            Providing digital solutions for businesses across Nepal.
+          </p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Follow Us</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              Facebook
             </a>
           </div>
 
@@ -35,7 +39,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
+              Instagram
             </a>
           </div>
 
@@ -45,53 +49,20 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              LinkedIn
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
+          <h3 className="font-bold text-lg">Services</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              Website Development
             </a>
           </div>
 
@@ -99,6 +70,39 @@ export const Footer = () => {
             <a
               rel="noreferrer noopener"
               href="#"
+              className="opacity-60 hover:opacity-100"
+            >
+              Social Media Management
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#"
+              className="opacity-60 hover:opacity-100"
+            >
+              Digital Marketing
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">Company</h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#about"
+              className="opacity-60 hover:opacity-100"
+            >
+              About Us
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#pricing"
               className="opacity-60 hover:opacity-100"
             >
               Pricing
@@ -108,7 +112,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#faq"
               className="opacity-60 hover:opacity-100"
             >
               FAQ
@@ -117,34 +121,34 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
+          <h3 className="font-bold text-lg">Contact Us</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#contact"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              Kathmandu Office
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="tel:+9779800000000"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              +977-9800000000
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="mailto:info@wltech.com.np"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              info@wltech.com.np
             </a>
           </div>
         </div>
@@ -152,14 +156,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2025 WL Tech Pvt. Ltd. | All Rights Reserved | The Digital Division of{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
+            href="#"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            WL Food
           </a>
         </h3>
       </section>

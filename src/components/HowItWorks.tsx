@@ -10,27 +10,27 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accessibility",
+    title: "1. Consultation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "We start by understanding your business goals, target audience, and specific requirements to create a tailored digital strategy.",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "2. Strategic Planning",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Our team develops a comprehensive roadmap with detailed timelines, deliverables, and key performance metrics for your project.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "3. Implementation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "We bring your digital presence to life with professional development, design, and content creation that aligns with your brand.",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "4. Growth & Support",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "After launch, we provide ongoing maintenance, analytics reporting, and optimization to ensure continued success and ROI.",
   },
 ];
 
@@ -41,15 +41,15 @@ export const HowItWorks = () => {
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Our{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          Process{" "}
         </span>
-        Step-by-Step Guide
+        From Concept to Success
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        We follow a proven methodology that ensures your digital project is completed efficiently, 
+        on time, and delivers real business results.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -18,7 +18,7 @@ enum PopularPlanType {
 interface PricingProps {
   title: string;
   popular: PopularPlanType;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -26,48 +26,48 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Monthly Marketing Plan",
     popular: 0,
-    price: 0,
+    price: "NPR 20,000",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Perfect for small to medium businesses looking to grow online.",
+    buttonText: "Start Now",
+    benefitList: [
+      "3–4 posts per week",
+      "Content creation (design + captions)",
+      "Scheduled posting and management",
+      "Hashtag research",
+      "Community management",
+    ],
+  },
+  {
+    title: "Starter Website Package",
+    popular: 1,
+    price: "NPR 15,000 – NPR 50,000",
+    description:
+      "Perfect for personal websites, blogs, portfolios, or small businesses.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Static website (up to 5 pages)",
+      "Mobile-responsive design",
+      "Basic SEO setup",
+      "Contact form integration",
+      "Free support for 15 days",
     ],
   },
   {
-    title: "Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
-    benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Enterprise",
+    title: "Custom Development",
     popular: 0,
-    price: 40,
+    price: "Custom",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Have a custom project in mind? We'll turn your ideas into reality.",
+    buttonText: "Contact Us",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Scalable development",
+      "Ongoing support and maintenance",
+      "Flexible pricing based on needs",
+      "E-commerce & booking solutions",
+      "AI integration",
     ],
   },
 ];
@@ -79,16 +79,15 @@ export const Pricing = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Our
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Professional{" "}
         </span>
-        Access
+        Services
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Choose the right package for your business needs
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -113,8 +112,9 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">{pricing.price}</span>
+                {pricing.title === "Monthly Marketing Plan" && <span className="text-muted-foreground"> /month</span>}
+                {pricing.title === "Starter Website Package" && <span className="text-muted-foreground"> (one-time)</span>}
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>

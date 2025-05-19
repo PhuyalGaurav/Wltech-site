@@ -12,50 +12,51 @@ interface TestimonialProps {
   name: string;
   userName: string;
   comment: string;
+  business?: string;
 }
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    image: "https://i.pravatar.cc/150?img=52",
+    name: "Anish Sharma",
+    userName: "Founder",
+    business: "Himalayan Brews",
+    comment: "WL Tech transformed our café's online presence! Our website now brings in 30% more customers, and their social media management has created a loyal community around our brand. Best digital investment we've made for our business in Kathmandu.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
-    comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    image: "https://i.pravatar.cc/150?img=42",
+    name: "Priya Thapa",
+    userName: "Owner",
+    business: "Nepali Handicrafts",
+    comment: "Our e-commerce sales have doubled since WL Tech redesigned our website. They understood our traditional crafts business and created a modern platform that appeals to both local and international customers. Their team is responsive and professional.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    image: "https://i.pravatar.cc/150?img=51",
+    name: "Rajesh Magar",
+    userName: "Managing Director",
+    business: "Mountain Tours Nepal",
+    comment: "The booking system WL Tech built for our trekking company has streamlined our operations completely. Their understanding of tourism in Nepal combined with their technical expertise delivered exactly what we needed. Highly recommend!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+    image: "https://i.pravatar.cc/150?img=30",
+    name: "Sunita Gurung",
+    userName: "CEO",
+    business: "Kathmandu Fashion House",
+    comment: "WL Tech's social media marketing has put our clothing brand on the map. Their team creates engaging content that resonates with our audience, and their strategic approach has helped us build a strong online community.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "https://i.pravatar.cc/150?img=48",
+    name: "Binod Paudel",
+    userName: "Director",
+    business: "Himalaya Fresh Foods",
+    comment: "As a sister company to WL Food, we've seen firsthand how the WL Tech team delivers digital excellence. Their website development and online marketing strategies have helped our organic food business reach customers throughout Nepal.",
+  },
+  {
+    image: "https://i.pravatar.cc/150?img=45",
+    name: "Meera Shrestha",
+    userName: "Proprietor",
+    business: "Mandala Arts Gallery",
+    comment: "Working with WL Tech was an excellent decision for our small gallery. Their affordable website package was perfect for our needs, and the added SEO work has helped art lovers from across Nepal and abroad discover our unique collections.",
   },
 ];
 
@@ -66,42 +67,43 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        See How We've
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Helped Businesses{" "}
         </span>
-        This Landing Page
+        Across Nepal
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        Don't just take our word for it. Hear from Nepali businesses that have grown their online presence with WL Tech's digital solutions.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto space-y-0">
         {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
+          ({ image, name, userName, business, comment }: TestimonialProps) => (
             <Card
-              key={userName}
-              className="max-w-md md:break-inside-avoid overflow-hidden"
+              key={name + business}
+              className="max-w-md overflow-hidden h-full"
             >
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
                   <AvatarImage
-                    alt=""
+                    alt={`Photo of ${name}`}
                     src={image}
                   />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarFallback>{name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
 
                 <div className="flex flex-col">
                   <CardTitle className="text-lg">{name}</CardTitle>
-                  <CardDescription>{userName}</CardDescription>
+                  <CardDescription>{userName}{business ? ` • ${business}` : ''}</CardDescription>
                 </div>
               </CardHeader>
 
-              <CardContent>{comment}</CardContent>
+              <CardContent className="pt-4">
+                <p className="text-muted-foreground">"{comment}"</p>
+              </CardContent>
             </Card>
           )
         )}
