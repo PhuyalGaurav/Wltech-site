@@ -7,11 +7,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import arnavImg from "../assets/userIcons/arnav.jpg";
+import shuvaImg from "../assets/userIcons/shuva.jpg";
+import manishImg from "../assets/userIcons/manish.jpg";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 interface TeamProps {
   imageUrl: string;
   name: string;
+  fewWords: string;
   position: string;
   socialNetworks: SociaNetworkslProps[];
 }
@@ -23,28 +27,10 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    name: "Gaurav Phuyal",
+    fewWords: "",
+    position: "Lead Developer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -61,15 +47,19 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
+    imageUrl: manishImg,
+    name: "Manish Bagale",
+    fewWords: "",
     position: "Frontend Developer",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
-
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -77,8 +67,9 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
+    imageUrl: shuvaImg,
+    name: "Shuva Aashish Gyawali",
+    fewWords: "Aspiring developer skilled in Python, Django, and JavaScript.",
     position: "Backend Developer",
     socialNetworks: [
       {
@@ -88,6 +79,90 @@ const teamList: TeamProps[] = [
       {
         name: "Facebook",
         url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/shuva_aashish9/",
+      },
+    ],
+  },
+  {
+    imageUrl: "https://i.pravatar.cc/150?img=17",
+    name: "Pratik Dahal",
+    fewWords: "",
+    position: "Backend Developer",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/",
+      },
+    ],
+  },
+  {
+    imageUrl: arnavImg,
+    name: "Arnav Adhikari",
+    fewWords: '"Death is what gives life a meaning." 😆',
+    position: "UI/UX Designer",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/iamyself._/",
+      },
+    ],
+  },
+  {
+    imageUrl: "https://i.pravatar.cc/150?img=17",
+    name: "Himal Khadka",
+    fewWords: "",
+    position: "Sales Executive",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/",
+      },
+    ],
+  },
+  {
+    imageUrl: "https://i.pravatar.cc/150?img=17",
+    name: "Manish Burathoki",
+    fewWords: "",
+    position: "Support",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/",
       },
     ],
   },
@@ -108,10 +183,7 @@ export const Team = () => {
   };
 
   return (
-    <section
-      id="team"
-      className="container py-24 sm:py-32"
-    >
+    <section id="team" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Our Dedicated{" "}
@@ -120,13 +192,19 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Meet our hardworking team of professionals, dedicated to delivering the
+        best results for our clients.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({
+            imageUrl,
+            name,
+            position,
+            socialNetworks,
+            fewWords,
+          }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -144,7 +222,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{fewWords ? fewWords : "Hardworking & Dedicated."}</p>
               </CardContent>
 
               <CardFooter>
