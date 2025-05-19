@@ -90,7 +90,7 @@ const teamList: TeamProps[] = [
     imageUrl: "https://i.pravatar.cc/150?img=17",
     name: "Pratik Dahal",
     fewWords: "",
-    position: "Backend Developer",
+    position: "Mobile App / Frontend Developer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -103,6 +103,26 @@ const teamList: TeamProps[] = [
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
+      },
+    ],
+  },
+  {
+    imageUrl: arnavImg,
+    name: "Saurav Khatri",
+    fewWords: '"ok."',
+    position: "Frontend Developer",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/iamyself._/",
       },
     ],
   },
