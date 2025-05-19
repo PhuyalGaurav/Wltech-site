@@ -9,9 +9,8 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
+import { Check, Linkedin, Facebook } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const HeroCards = () => {
   return (
@@ -61,15 +60,15 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
+              href="https://facebook.com/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
                 size: "sm",
               })}
             >
-              <span className="sr-only">Github icon</span>
-              <GitHubLogoIcon className="w-5 h-5" />
+              <span className="sr-only">Facebook icon</span>
+              <Facebook className="w-5 h-5" />
             </a>
             <a
               rel="noreferrer noopener"
