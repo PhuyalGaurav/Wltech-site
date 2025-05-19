@@ -18,35 +18,35 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Responsive Web Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our websites look stunning on all devices, from smartphones to desktops. We prioritize mobile-first design to ensure your business reaches customers wherever they are.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Strategic Social Media",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "We create engaging social media campaigns that connect with your audience. Our content strategies drive brand awareness, customer engagement, and measurable business growth.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Custom Digital Solutions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "From e-commerce platforms to booking systems, we develop tailor-made applications that solve your specific business challenges with elegant, user-friendly interfaces.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Mobile Responsive",
+  "SEO Optimized",
+  "Social Media Integration",
+  "E-commerce Solutions",
+  "Content Management",
+  "Booking Systems",
+  "Custom Development",
+  "Analytics & Reporting",
+  "Local Business Focus",
 ];
 
 export const Features = () => {
@@ -56,9 +56,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Digital{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Expertise & Features
         </span>
       </h2>
 

@@ -112,7 +112,7 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
+            Website
             <Badge
               variant="secondary"
               className="text-sm text-primary"
@@ -121,24 +121,24 @@ export const HeroCards = () => {
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
+            <span className="text-3xl font-bold">NPR 15,000</span>
+            <span className="text-muted-foreground"> – 50,000</span>
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            Perfect for personal websites, blogs, portfolios, or small businesses.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full">Get Started</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["Static website (up to 5 pages)", "Mobile-responsive design", "Basic SEO setup"].map(
               (benefit: string) => (
                 <span
                   key={benefit}
