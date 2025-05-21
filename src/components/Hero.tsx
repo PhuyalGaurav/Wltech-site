@@ -13,21 +13,20 @@ export const Hero = () => {
               WL Tech
             </span>{" "}
             <br />
-          </h1>{" "}We Link,
-          <br />
-          {" "}
+          </h1>{" "}
+          We Link,
+          <br />{" "}
           <h2 className="inline">
             <span className="inline bg-gradient-to-r from-gray-400 to-gray-600 text-transparent bg-clip-text">
               We Create.
             </span>{" "}
           </h2>
-        </main>
-
+        </main>{" "}
         <p className="text-xl md:text-2xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Transforming your digital presence with expert web development,
-          design, and marketing solutions tailored to your business needs.
+          Elevating your business with cutting-edge web development, innovative
+          design, and strategic digital marketing solutions customized for
+          maximum impact.
         </p>
-
         <div className="space-y-4 md:space-y-0 md:space-x-4">
           <Button className="w-full md:w-1/3 text-lg py-6">Get Started</Button>
 
@@ -39,7 +38,7 @@ export const Hero = () => {
               variant: "outline",
             })}`}
           >
-            Facebook Page
+            Connect With Us
             <Facebook className="ml-2 w-5 h-5" />
           </a>
         </div>
