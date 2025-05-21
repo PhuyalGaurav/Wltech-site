@@ -60,7 +60,7 @@ export const teamList: TeamMemberProps[] = [
   {
     imageUrl: shuvaImg,
     name: "Shuva Aashish Gyawali",
-    fewWords: "Aspiring developer skilled in Python, Django, and JavaScript.",
+    fewWords: "Working at WL Tech is a dream come true. I love it here with my team.",
     position: "Backend Developer",
     socialNetworks: [
       {
